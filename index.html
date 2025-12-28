@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BookStore</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+<link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.7.0/fonts/remixicon.css"
+    rel="stylesheet"
+/>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  
+    <div class="main">
+        <div class="nav">
+            <div class="nav-part-1">
+                <img src="resources/bookstore-logo.png" alt="logo">
+                <ul>
+                <li>Home</li>
+                <li>New</li>
+                <li>Popular</li>
+                <li>Volumes</li>
+                <li>Contact</li>
+            </ul>
+            </div>
+            <div class="nav-part-2">
+                <i class="ri-search-line" id="rim"></i>
+                <i class="ri-shopping-cart-2-line"></i>
+                <i class="ri-menu-line"></i>
+            </div>
+        </div>
+    <div class="content">
+        <div class="content-left">
+            <h5>Explore Popular Books</h5>
+            <h1>EXPLORE BOOKSTORE</h1>
+            <p>Explore the fantastic tales,Real-world documentaries,Various Categories,Bio-graphies and more only with Bookstore.With your Favourites delivered at your Doorstep. </p>
+            <button class="btn">Shop Now</button>
+        </div>
+        <div class="content-right">
+            <div class="product">
+                <img src="resources/atomic-habits.png" alt="">
+                <h4>Atomic Habits</h4>
+                <p class="category">Productivity</p>
+                <p class="language">English</p>
+                <p class="price">₹149</p>
+            </div>
+            <div class="product">
+                <img src="resources/img2.png" alt="">
+                <h4>The Alchemist</h4>
+                <p class="category">Fiction</p>
+                <p class="language">English</p>
+                <p class="price">₹199</p>
+            </div>
+            <div class="product">
+                <img src="resources/IMG5.jpg" alt="">
+                <h4>Rich Dad , Poor Dad</h4>
+                <p class="category">Finance</p>
+                <p class="language">Hindi</p>
+                <p class="price">₹115.49</p>
+            </div>
+            <div class="product">
+                <img src="resources/IMG4.jpg" alt="">
+                <h4>Atomic Habits</h4>
+                <p class="category">Finance</p>
+                <p class="language">English</p>
+                <p class="price">₹199</p>
+            </div>
+            <div class="product">
+                <img src="resources/IMG6.jpg" alt="">
+                <h4>Clean Code</h4>
+                <p class="category">Technology</p>
+                <p class="language">English</p>
+                <p class="price">₹249</p>
+            </div>
+        </div>
+    </div>
+    </div>
+      <script>
+    const scrollContainer = document.querySelector(".content-right");
+scrollContainer.addEventListener("wheel", (evt) => {
+    evt.preventDefault(); 
+    scrollContainer.scrollLeft += evt.deltaY;
+}, { passive: false }); 
+</script>
+</body>
+</html>
